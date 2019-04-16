@@ -1,6 +1,6 @@
 # netdata stream configuration
 
-{% if netdata_stream_master_node == '' %}
+{% if netdata_registry_enabled == true %}
 [{{ netdata_stream_api_key }}]
     # enable/disable this API key
     enabled = yes
