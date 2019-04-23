@@ -13,3 +13,4 @@
     creates: /usr/sbin/netdata
   become: true
   notify: restart netdata
+  ignore_errors: "{{ ansible_check_mode }}"
